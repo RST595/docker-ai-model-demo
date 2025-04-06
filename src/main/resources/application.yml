@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: docker-ai-model-demo
+  ai:
+    openai:
+      # Don't need key, because run local model, but it's required property for spring open AI
+      api-key: '_'
+      chat:
+        base-url: http://localhost:12434/engines/llama.cpp
+        # Value below is default
+        # completions-path: /v1/chat/completions
+        options:
+          model: ai/gemma3
